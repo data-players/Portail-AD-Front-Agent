@@ -11,7 +11,7 @@ const routes = [
     path: '/chat',
     label: 'Chat',
     section: 'middle',
-    icon: <SearchIcon />,
+    icon: <ExploreIcon />,
     id: 'chat-link' }
 ];
 

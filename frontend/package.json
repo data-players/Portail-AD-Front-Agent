@@ -2,7 +2,7 @@
   "name": "agent-ia-client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://agent.portail-alimentation-durable.fr",
+  "homepage": "https://data-players.github.io/Portail-AD-Front-Agent",
   "dependencies": {
     "@n8n/chat": "^0.27.1",
     "marked": "^15.0.8",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "PUBLIC_URL=https://agent.portail-alimentation-durable.fr/ react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

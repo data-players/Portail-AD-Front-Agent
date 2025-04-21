@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..700&display=swap'); /* Ajout des poids 400, 500 et 700 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  color: #212529;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Styles pour Desktop */
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 56px;
+  letter-spacing: 0.0075em;
+}
+
+h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.subtitle1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400; /* Assurez-vous que le poids 400 est importé */
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.subtitle2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; /* Assurez-vous que le poids 700 est importé */
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.body1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500; /* Assurez-vous que le poids 500 est importé */
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.body2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500; /* Assurez-vous que le poids 500 est importé */
+  font-size: 14px;
+  line-height: 18px;
+
+}
+
+.body3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500; /* Assurez-vous que le poids normal est importé */
+  font-size: 12px!important;
+  line-height: 16px!important;
+}
+
+.body3.bold {
+  font-weight: bold !important;
+}
+
+
+/* Styles pour Mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .subtitle1 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .subtitle2 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .body1 {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .body2 {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .body3 {
+    font-size: 9px!important;
+    line-height: 13px!important;
+  }
+}
+
+.appContainer {
+  display: flex;
+  height : 100%;
+}
+
+.mainContent {
+  flex-grow: 1;
+  overflow: auto !important;
+}

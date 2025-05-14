@@ -12,6 +12,13 @@
   margin-bottom: 8px;
 }
 
+/* Conteneur pour le message d'intro et la zone de saisie */
+.messages > div:first-child {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .message {
   padding: 8px;
   margin: 4px 0;
@@ -57,4 +64,47 @@
 .message .markdown {
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+.intro-input-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+  resize: none;
+}
+
+.intro-input-container button {
+  align-self: flex-end;
+  padding: 8px 16px;
+  background-color: #B9FF66;
+  color: #343A33;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.intro-input-container button:hover {
+  box-shadow: 0px 5px 0px 0px #191A23;
+}
+
+.intro-input-container button:disabled {
+  background-color: #F3F2F1;
+  cursor: not-allowed;
+  box-shadow: none;
 } 

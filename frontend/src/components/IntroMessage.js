@@ -49,7 +49,7 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
             className="accordion-toggle" 
             onClick={toggleAccordion}
           >
-            <span>Comment ça marche ? j'en veut un pour mon organisation !</span>
+            <span>Comment ça marche ? j'en veux un pour mon organisation !</span>
             <span className={`accordion-icon ${isAccordionOpen ? 'open' : ''}`}>
               {isAccordionOpen ? '−' : '+'}
             </span>

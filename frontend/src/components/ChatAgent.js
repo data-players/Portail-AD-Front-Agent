@@ -42,11 +42,11 @@ const ChatAgent = () => {
                 value={input}
                 onChange={e => setInput(e.target.value)}
                 onKeyDown={e => e.key === 'Enter' && !e.shiftKey && (e.preventDefault(), handleSend())}
-                placeholder="poser votre question ou votre recherche ici"
+                placeholder="poser votre question ou votre recherhce ici"
                 className="intro-textarea"
               />
               <button onClick={handleSend} disabled={state.loadingAgent}>
-                {state.loadingAgent ? 'Loading…' : 'Send'}
+                {state.loadingAgent ? 'chargement...' : 'envoyer'}
               </button>
             </div>
           </>

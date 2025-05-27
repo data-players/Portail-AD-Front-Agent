@@ -63,7 +63,7 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
             
             <div className="action-button-container">
               <a 
-                href="https://data-players.github.io/comm-agent-IA/pitch-commercial.html" 
+                href="https://data-players.github.io/comm-agent-IA" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="learn-more-button"

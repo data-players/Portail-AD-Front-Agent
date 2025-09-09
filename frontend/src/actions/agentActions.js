@@ -30,10 +30,8 @@ export const sendMessageToAgent = async (dispatch, getState, message) => {
     if (response.status === 429) {
       const errorData = await response.json();
       const quotaMessage = errorData?.error?.message || "Quota dépassé";
-      const customMessage = `Cet outil est un démonstrateur avec un nombre limité de messages sur une période de temps pour limiter la consommation d'énergie. Voici le quota qui a été dépassé : ${quotaMessage}
-
+      const customMessage = `Cet outil est un démonstrateur avec un **nombre limité de messages** sur une période de temps pour **limiter la consommation d'énergie**. Voici le quota qui a été dépassé : **${quotaMessage}**
 Vous pourrez réutiliser ce démonstrateur une fois que ce dépassement de quotas ne sera plus applicable.`;
-      
       dispatch({ type: 'FETCH_ERROR_AGENT', payload: customMessage });
       return;
     }

@@ -13,7 +13,7 @@ export const sendMessageToAgent = async (dispatch, getState, message) => {
 
   try {
     // 2️⃣ use fetch to communicate with n8n agent webhook
-    const response = await fetch('https://access-guard.data-players.com/gateway/agent/pad', {
+    const response = await fetch('https://access-guard.data-players.com/gateway/agent-portail-ad/agentAD', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

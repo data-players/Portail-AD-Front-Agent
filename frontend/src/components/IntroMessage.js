@@ -11,13 +11,7 @@ const IntroMessage = () => {
   const introMessage = `
 ### Agent IA Portail Alimentation Durable
 
-L'Agent IA du Portail de l'Alimentation Durable est un assistant intelligent conçu pour faciliter l'accès et l'exploitation des données issues du projet [portail-alimentation-durable.fr](https://www.portail-alimentation-durable.fr/), qui regroupe une grande variété de ressources structurées sur les politiques, initiatives, acteurs et projets liés à la transition alimentaire en France.
-
-Cet agent vous permet :
-* **Interroger directement la base de connaissance** du portail,
-* **Explorer des concepts complexes** ou peu connus en s'appuyant sur des ressources externes comme Wikipedia,
-* **Obtenir des réponses synthétiques, qualifiées et contextualisées**, issues des données métier du portail et enrichies par la recherche documentaire,
-* **Naviguer dans des contenus riches** (fiches actions, diagnostics territoriaux, cartographies, référentiels, etc.) sans expertise technique préalable.
+Votre assistant intelligent pour explorer et exploiter les ressources du portail [portail-alimentation-durable.fr](https://www.portail-alimentation-durable.fr/). Accédez facilement aux politiques, initiatives, acteurs et projets de la transition alimentaire en France.
 `;
 
   // Contenu de l'accordéon (détails techniques)
@@ -39,54 +33,89 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
   return (
     <div className="intro-message">
       <div className="intro-content">
-        <div 
-          className="markdown"
-          dangerouslySetInnerHTML={{ __html: marked(introMessage) }}
-        />
-        
-        <div className="accordion">
-          <button 
-            className="accordion-toggle" 
-            onClick={toggleAccordion}
-          >
-            <span>Comment ça marche ? j'en veux un pour mon organisation !</span>
-            <span className={`accordion-icon ${isAccordionOpen ? 'open' : ''}`}>
-              {isAccordionOpen ? '−' : '+'}
-            </span>
-          </button>
-          
-          <div className={`accordion-content ${isAccordionOpen ? 'open' : ''}`}>
-            <div 
-              className="markdown"
-              dangerouslySetInnerHTML={{ __html: marked(accordionContent) }}
-            />
+        {/* Hero Section */}
+        <div className="hero-section">
+          <div 
+            className="hero-title markdown"
+            dangerouslySetInnerHTML={{ __html: marked(introMessage) }}
+          />
+        </div>
+
+        {/* Features Grid */}
+        <div className="features-grid">
+          <div className="feature-card">
+            <h4>Recherche intelligente</h4>
+            <p>Interrogez directement la base de connaissance du portail avec un langage naturel</p>
+          </div>
+
+          <div className="feature-card">
+            <h4>Exploration enrichie</h4>
+            <p>Explorez des concepts complexes en s'appuyant sur des ressources externes</p>
+          </div>
+
+          <div className="feature-card">
+            <h4>Réponses contextualisées</h4>
+            <p>Obtenez des réponses synthétiques qualifiées et contextualisées</p>
+          </div>
+
+          <div className="feature-card">
+            <h4>Navigation simplifiée</h4>
+            <p>Naviguez dans des contenus riches sans expertise technique préalable</p>
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="cta-section">
+          <div className="accordion">
+            <button 
+              className="accordion-toggle" 
+              onClick={toggleAccordion}
+            >
+              <span>✨ Comment ça marche ? J'en veux un pour mon organisation !</span>
+              <span className={`accordion-icon ${isAccordionOpen ? 'open' : ''}`}>
+                {isAccordionOpen ? '−' : '+'}
+              </span>
+            </button>
             
-            <div className="action-button-container">
-              <a 
-                href="https://data-players.github.io/comm-agent-IA" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="learn-more-button"
-              >
-                En savoir plus sur les solutions d'agent IA
-              </a>
-            </div>
-            
-            <div className="n8n-illustration">
-              <img 
-                src={n8nImage} 
-                alt="Architecture n8n pour l'Agent Portail AD" 
-                className="n8n-image" 
+            <div className={`accordion-content ${isAccordionOpen ? 'open' : ''}`}>
+              <div 
+                className="markdown"
+                dangerouslySetInnerHTML={{ __html: marked(accordionContent) }}
               />
-              <p className="image-caption">Architecture de l'agent basée sur n8n</p>
+              
+              <div className="action-button-container">
+                <a 
+                  href="https://data-players.github.io/comm-agent-IA" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="learn-more-button"
+                >
+                  En savoir plus sur les solutions d'agent IA
+                </a>
+              </div>
+              
+              <div className="n8n-illustration">
+                <img 
+                  src={n8nImage} 
+                  alt="Architecture n8n pour l'Agent Portail AD" 
+                  className="n8n-image" 
+                />
+                <p className="image-caption">Architecture de l'agent basée sur n8n</p>
+              </div>
             </div>
           </div>
         </div>
         
-        <div 
-          className="invite-text"
-          dangerouslySetInnerHTML={{ __html: marked(inviteText) }}
-        />
+        {/* Invitation Section */}
+        <div className="invite-section">
+          <div className="invite-content">
+            <div className="invite-icon">💬</div>
+            <div 
+              className="invite-text"
+              dangerouslySetInnerHTML={{ __html: marked(inviteText) }}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -47,7 +47,10 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
             <h4>Recherche intelligente</h4>
             <p>Interrogez directement la base de connaissance du portail avec un langage naturel</p>
           </div>
-
+          <div className="feature-card">
+            <h4>Accès unifié aux sources</h4>
+            <p>Accédez à toutes les bases de connaissances des partenaires du portail simplement</p>
+          </div>
           <div className="feature-card">
             <h4>Exploration enrichie</h4>
             <p>Explorez des concepts complexes en s'appuyant sur des ressources externes</p>
@@ -58,10 +61,7 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
             <p>Obtenez des réponses synthétiques qualifiées et contextualisées</p>
           </div>
 
-          <div className="feature-card">
-            <h4>Navigation simplifiée</h4>
-            <p>Naviguez dans des contenus riches sans expertise technique préalable</p>
-          </div>
+
         </div>
 
         {/* CTA Section */}

@@ -15,12 +15,12 @@
 /* Hero Section */
 .hero-section {
   text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem 1.2rem;
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
   border-radius: 20px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-section::before {
@@ -48,14 +48,14 @@
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.2rem;
-  margin: 2rem 0;
+  gap: 1rem;
+  margin: 1.5rem 0;
   padding: 0 1rem;
 }
 
 .feature-card {
   background: #ffffff;
-  padding: 1.2rem 1rem;
+  padding: 1rem 0.8rem;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
@@ -102,10 +102,11 @@
 
 .intro-content h3 {
   color: #1f2937;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   margin-top: 0;
+  line-height: 1.2;
   background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -149,7 +150,7 @@
 
 /* CTA Section */
 .cta-section {
-  margin: 2rem 0;
+  margin: 1.2rem 0;
   padding: 0 1rem;
 }
 
@@ -165,7 +166,7 @@
 
 .accordion-toggle {
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 1.2rem 1.5rem;
   background: transparent;
   border: none;
   text-align: left;
@@ -234,14 +235,14 @@
 
 /* Invite Section */
 .invite-section {
-  margin: 1.5rem 0 1rem;
+  margin: 1rem 0 0.5rem;
   padding: 0 1rem;
 }
 
 .invite-content {
   background: #ffffff;
   border-radius: 12px;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.2rem;
   text-align: center;
   border: 1px solid #e2e8f0;
   display: flex;
@@ -326,41 +327,42 @@
 @media (max-width: 768px) {
   .features-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.8rem;
     padding: 0 0.5rem;
-    margin: 1.5rem 0;
+    margin: 1.2rem 0;
   }
   
   .feature-card {
-    padding: 1rem 0.8rem;
+    padding: 0.8rem 0.6rem;
   }
   
   .hero-section {
-    padding: 1.2rem 1rem;
-    margin-bottom: 1.5rem;
+    padding: 0.8rem 1rem 1rem;
+    margin-bottom: 1.2rem;
   }
   
   .intro-content h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.1;
   }
   
   .invite-content {
-    padding: 0.8rem 1rem;
+    padding: 0.6rem 1rem;
     flex-direction: row;
     gap: 0.4rem;
   }
   
   .accordion-toggle {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.2rem;
     font-size: 0.9rem;
   }
   
   .cta-section {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
   }
   
   .invite-section {
-    margin: 1rem 0 0.5rem;
+    margin: 0.8rem 0 0.3rem;
   }
 }
 

@@ -1,19 +1,60 @@
 {
-  "short_name": "AgentIA",
-  "name": "Agent IA Portail AD",
+  "short_name": "Agent IA Portail AD",
+  "name": "Agent IA - Portail Alimentation Durable",
+  "description": "Assistant intelligent pour explorer et exploiter les ressources du portail alimentation durable. Recherche conversationnelle sur la transition alimentaire en France.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#4CAF50",
+  "background_color": "#ffffff",
+  "lang": "fr",
+  "scope": "/",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/og-image-temp.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "categories": [
+    "productivity",
+    "education",
+    "utilities"
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image-temp.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Interface principale de l'Agent IA"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nouveau Chat",
+      "short_name": "Chat",
+      "description": "Démarrer une nouvelle conversation avec l'agent IA",
+      "url": "/chat",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
 } 

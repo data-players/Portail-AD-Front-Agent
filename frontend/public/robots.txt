@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://data-players.github.io/Portail-AD-Front-Agent/sitemap.xml
+
+# Specific directives
+Allow: /chat
+Allow: /static/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.svg
+Allow: /manifest.json
+Allow: /favicon.ico
+
+# Disallow development/temporary files
+Disallow: *.md
+Disallow: /og-image-description.md
+
+# Crawl delay (optional, set to 1 second)
+Crawl-delay: 1

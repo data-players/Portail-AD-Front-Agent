@@ -5,6 +5,22 @@ body {
   height: 100vh;
   color: #212529;
   font-family: 'Space Grotesk', sans-serif;
+  /* Fond inspiré du Portail de l'Alimentation Durable */
+  background: linear-gradient(135deg,
+      #f0f9ff 0%,
+      /* Bleu très clair */
+      #ecfdf5 15%,
+      /* Vert très clair */
+      #fefce8 35%,
+      /* Jaune très clair (céréales) */
+      #f0fdf4 55%,
+      /* Vert nature clair */
+      #f8fafc 75%,
+      /* Gris très clair */
+      #ecfdf5 100%
+      /* Retour au vert clair */
+    );
+  background-attachment: fixed;
 }
 
 #root {
@@ -12,12 +28,21 @@ body {
 }
 
 /* Universal font family for all elements */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   font-family: 'Space Grotesk', sans-serif;
 }
 
 /* Specific rules for common HTML elements */
-p, div, span, a, button, input, textarea, label {
+p,
+div,
+span,
+a,
+button,
+input,
+textarea,
+label {
   font-family: 'Space Grotesk', sans-serif;
 }
 

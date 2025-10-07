@@ -12,7 +12,8 @@ const IntroMessage = () => {
 ### Agent IA
 ### Portail Alimentation Durable
 
-Votre assistant intelligent pour explorer et exploiter les ressources du portail [portail-alimentation-durable.fr](https://www.portail-alimentation-durable.fr/). Accédez facilement aux politiques, initiatives, acteurs et projets de la transition alimentaire en France.
+Votre assistant intelligent pour explorer et exploiter les ressources du portail
+[portail-alimentation-durable.fr](https://www.portail-alimentation-durable.fr/). Accédez facilement aux politiques, initiatives, acteurs et projets de la transition alimentaire en France.
 `;
 
   // Contenu de l'accordéon (détails techniques)

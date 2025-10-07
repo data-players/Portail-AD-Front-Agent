@@ -3,23 +3,18 @@
 body {
   margin: 0;
   height: 100vh;
-  color: #212529;
   font-family: 'Space Grotesk', sans-serif;
-  /* Fond inspiré du Portail de l'Alimentation Durable */
-  background: linear-gradient(135deg,
-      #f0f9ff 0%,
-      /* Bleu très clair */
-      #ecfdf5 15%,
-      /* Vert très clair */
-      #fefce8 35%,
-      /* Jaune très clair (céréales) */
-      #f0fdf4 55%,
-      /* Vert nature clair */
-      #f8fafc 75%,
-      /* Gris très clair */
-      #ecfdf5 100%
-      /* Retour au vert clair */
-    );
+  /* Dégradé radial avec overlay pour distinguer la zone principale */
+  background:
+    linear-gradient(to right,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0) 100%),
+    radial-gradient(circle at 0% 0%,
+      #88BDED 0%,
+      #88BDED 10%,
+      #E8E8E8 70%,
+      #E8E8E8 90%);
   background-attachment: fixed;
 }
 

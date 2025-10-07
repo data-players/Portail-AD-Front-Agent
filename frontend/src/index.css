@@ -12,8 +12,8 @@ body {
       rgba(255, 255, 255, 0) 100%),
     radial-gradient(circle at 0% 0%,
       #88BDED 0%,
-      #88BDED 10%,
-      #E8E8E8 70%,
+      #88BDED 25%,
+      #E8E8E8 60%,
       #E8E8E8 90%);
   background-attachment: fixed;
 }

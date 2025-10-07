@@ -4,10 +4,21 @@ body {
   margin: 0;
   height: 100vh;
   color: #212529;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 #root {
   height: 100%;
+}
+
+/* Universal font family for all elements */
+*, *::before, *::after {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Specific rules for common HTML elements */
+p, div, span, a, button, input, textarea, label {
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 /* Styles pour Desktop */

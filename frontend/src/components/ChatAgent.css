@@ -31,6 +31,7 @@
   font-size: 15px;
   line-height: 1.5;
   word-wrap: break-word;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .message.user {
@@ -80,7 +81,7 @@
   font-size: 15px;
   line-height: 1.5;
   resize: none;
-  font-family: inherit;
+  font-family: 'Space Grotesk', sans-serif;
   outline: none;
   transition: border-color 0.2s ease;
   box-sizing: border-box;
@@ -96,6 +97,7 @@
 
 .inputContainer textarea::placeholder {
   color: #9ca3af;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 /* Send button styling */
@@ -118,6 +120,7 @@
   flex-shrink: 0;
   align-self: flex-start;
   margin-top: 16px;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .inputContainer button:hover:not(:disabled) {
@@ -155,6 +158,11 @@
 .message .markdown {
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.message .markdown * {
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .message .markdown h1,

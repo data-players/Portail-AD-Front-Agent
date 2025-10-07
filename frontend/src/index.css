@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..700&display=swap'); /* Ajout des poids 400, 500 et 700 */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 body {
   margin: 0;
@@ -36,16 +34,16 @@ h3 {
 }
 
 .subtitle1 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400; /* Assurez-vous que le poids 400 est importé */
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 40px;
   text-transform: uppercase;
 }
 
 .subtitle2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700; /* Assurez-vous que le poids 700 est importé */
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.4px;
@@ -53,25 +51,24 @@ h3 {
 }
 
 .body1 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500; /* Assurez-vous que le poids 500 est importé */
-  font-size: 16px;
-  line-height: 20px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 .body2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500; /* Assurez-vous que le poids 500 est importé */
-  font-size: 14px;
-  line-height: 18px;
-
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 .body3 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500; /* Assurez-vous que le poids normal est importé */
-  font-size: 12px!important;
-  line-height: 16px!important;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 11px !important;
+  line-height: 18px !important;
 }
 
 .body3.bold {
@@ -107,24 +104,24 @@ h3 {
   }
 
   .body1 {
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 19px;
   }
 
   .body2 {
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 10px;
+    line-height: 17px;
   }
 
   .body3 {
-    font-size: 9px!important;
-    line-height: 13px!important;
+    font-size: 8px !important;
+    line-height: 15px !important;
   }
 }
 
 .appContainer {
   display: flex;
-  height : 100%;
+  height: 100%;
 }
 
 .mainContent {

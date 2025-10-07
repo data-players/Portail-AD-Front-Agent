@@ -24,7 +24,7 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
 
   // Texte d'invitation final
   const inviteText = `
-**Utilisez la barre de recherche ci dessous pour commencer à interagir avec l'agent.**
+**Utilisez la barre de recherche ci dessous pour à interagir avec l'agent.**
 `;
 
   const toggleAccordion = () => {
@@ -36,7 +36,7 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
       <div className="intro-content">
         {/* Hero Section */}
         <div className="hero-section">
-          <div 
+          <div
             className="hero-title markdown"
             dangerouslySetInnerHTML={{ __html: marked(introMessage) }}
           />
@@ -68,8 +68,8 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
         {/* CTA Section */}
         <div className="cta-section">
           <div className="accordion">
-            <button 
-              className="accordion-toggle" 
+            <button
+              className="accordion-toggle"
               onClick={toggleAccordion}
             >
               <span>✨ Comment ça marche ? J'en veux un pour mon organisation !</span>
@@ -77,41 +77,41 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
                 {isAccordionOpen ? '−' : '+'}
               </span>
             </button>
-            
+
             <div className={`accordion-content ${isAccordionOpen ? 'open' : ''}`}>
-              <div 
+              <div
                 className="markdown"
                 dangerouslySetInnerHTML={{ __html: marked(accordionContent) }}
               />
-              
+
               <div className="action-button-container">
-                <a 
-                  href="https://data-players.github.io/comm-agent-IA" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://data-players.github.io/comm-agent-IA"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="learn-more-button"
                 >
                   En savoir plus sur les solutions d'agent IA
                 </a>
               </div>
-              
+
               <div className="n8n-illustration">
-                <img 
-                  src={n8nImage} 
-                  alt="Architecture n8n pour l'Agent Portail AD" 
-                  className="n8n-image" 
+                <img
+                  src={n8nImage}
+                  alt="Architecture n8n pour l'Agent Portail AD"
+                  className="n8n-image"
                 />
                 <p className="image-caption">Architecture de l'agent basée sur n8n</p>
               </div>
             </div>
           </div>
         </div>
-        
+
         {/* Invitation Section */}
         <div className="invite-section">
           <div className="invite-content">
             <div className="invite-icon">💬</div>
-            <div 
+            <div
               className="invite-text"
               dangerouslySetInnerHTML={{ __html: marked(inviteText) }}
             />

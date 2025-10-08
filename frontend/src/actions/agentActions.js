@@ -8,12 +8,22 @@ export const sendMessageToAgent = async (dispatch, getState, message) => {
   if (getState().loadingAgent || isFetchingAgent) return;
   isFetchingAgent = true;
 
+  // Check if 'no_marketing' parameter is in URL (hash router)
+  const hash = window.location.hash;
+  const queryStart = hash.indexOf('?');
+  const hasNoMarketing = queryStart !== -1 && new URLSearchParams(hash.substring(queryStart)).has('no_marketing');
+
+  // Select agent URL based on no_marketing parameter
+  const agentUrl = hasNoMarketing
+    ? 'https://access-guard.data-players.com/gateway/agent-portail-ad/agentADMoreQuota'
+    : 'https://access-guard.data-players.com/gateway/agent-portail-ad/agentAD';
+
   // 1️⃣ dispatch start
   dispatch({ type: 'FETCH_START_AGENT' });
 
   try {
     // 2️⃣ use fetch to communicate with n8n agent webhook
-    const response = await fetch('https://access-guard.data-players.com/gateway/agent-portail-ad/agentAD', {
+    const response = await fetch(agentUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -31,11 +41,6 @@ export const sendMessageToAgent = async (dispatch, getState, message) => {
     // Handle quota exceeded error (status 429)
     if (response.status === 429) {
       const quotaMessage = data?.error?.message || "Quota dépassé";
-
-      // Check if 'no_marketing' parameter is in URL (hash router)
-      const hash = window.location.hash;
-      const queryStart = hash.indexOf('?');
-      const hasNoMarketing = queryStart !== -1 && new URLSearchParams(hash.substring(queryStart)).has('no_marketing');
 
       if (hasNoMarketing) {
         // Simple message without marketing

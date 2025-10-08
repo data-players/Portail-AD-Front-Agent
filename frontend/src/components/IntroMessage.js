@@ -49,8 +49,8 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
 
   // Titre de l'accordéon - varie selon le mode
   const accordionTitle = isMarketingMode
-    ? '✨ Créez votre propre agent IA pour votre organisation !'
-    : '✨ Comment ça marche ? J\'en veux un pour mon organisation !';
+    ? 'Comment ça marche ? J\'en veux un pour mon organisation !'
+    : 'Comment ça marche ?';
 
   return (
     <div className="intro-message">
@@ -129,7 +129,7 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
         </div>
 
         {/* Invitation Section */}
-        <div className="invite-section">
+        {/* <div className="invite-section">
           <div className="invite-content">
             <div className="invite-icon">💬</div>
             <div
@@ -137,7 +137,7 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
               dangerouslySetInnerHTML={{ __html: marked(inviteText) }}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -31,14 +31,28 @@ export const sendMessageToAgent = async (dispatch, getState, message) => {
     // Handle quota exceeded error (status 429)
     if (response.status === 429) {
       const quotaMessage = data?.error?.message || "Quota dépassé";
-      data.message = `Cet outil est un démonstrateur avec un **nombre limité de messages** sur une période de temps pour **limiter la consommation d'énergie**. Voici le quota qui a été dépassé : **${quotaMessage}**
+
+      // Check if 'no_marketing' parameter is in URL (hash router)
+      const hash = window.location.hash;
+      const queryStart = hash.indexOf('?');
+      const hasNoMarketing = queryStart !== -1 && new URLSearchParams(hash.substring(queryStart)).has('no_marketing');
+
+      if (hasNoMarketing) {
+        // Simple message without marketing
+        data.message = `Cet outil est un démonstrateur avec un **nombre limité de messages** sur une période de temps pour **limiter la consommation d'énergie**. Voici le quota qui a été dépassé : **${quotaMessage}**
 Vous pourrez réutiliser ce démonstrateur une fois que ce dépassement de quotas ne sera plus applicable.`;
+      } else {
+        // Marketing message with call to action
+        data.message = `Cet outil est un démonstrateur avec un **nombre limité de messages** pour **limiter la consommation d'énergie**. Le quota a été dépassé : **${quotaMessage}**
+Vous pourrez réutiliser ce démonstrateur une fois que ce dépassement de quotas ne sera plus applicable.
+Vous souhaitez accéder à davantage de cas d'usage sans limitation ? **[Contactez Data Players](https://data-players.github.io/comm-agent-IA/)** pour découvrir nos solutions d'agents IA personnalisés adaptés à vos besoins professionnels.`;
+      }
       // dispatch({ type: 'FETCH_ERROR_AGENT', payload: customMessage });
       // return;
     }
 
     // if (!response.ok) {
-    //   dispatch({ type: 'FETCH_ERROR_AGENT', payload: `HTTP error! status: ${response.status}` });
+    //   dispatch({ type: 'FETCH_ERROR_AGENT', payload: `HTTP error! status: ${ response.status } ` });
     // }
 
 

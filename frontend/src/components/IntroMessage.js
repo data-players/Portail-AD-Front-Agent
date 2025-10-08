@@ -5,14 +5,30 @@ import './IntroMessage.css';
 import n8nImage from '../assets/n8n.png';
 
 const IntroMessage = () => {
-  const [isAccordionOpen, setIsAccordionOpen] = useState(false);
+  // Check if 'no_marketing' parameter is in URL (hash router)
+  const hasNoMarketing = () => {
+    // Extract query string from hash (e.g., #/chat?no_marketing -> ?no_marketing)
+    const hash = window.location.hash;
+    const queryStart = hash.indexOf('?');
+    if (queryStart === -1) return false;
+
+    const queryString = hash.substring(queryStart);
+    const urlParams = new URLSearchParams(queryString);
+    return urlParams.has('no_marketing');
+  };
+
+  // Check if marketing mode is enabled (no_marketing NOT present)
+  const isMarketingMode = !hasNoMarketing();
+
+  // Open accordion by default, unless 'no_marketing' parameter is present
+  const [isAccordionOpen, setIsAccordionOpen] = useState(isMarketingMode);
 
   // Introduction message text (partie principale)
   const introMessage = `
 ### Agent IA
 ### Portail Alimentation Durable
 
-Votre assistant intelligent pour explorer et exploiter les ressources du portail</br>[portail-alimentation-durable.fr](https://www.portail-alimentation-durable.fr/). Accédez facilement aux politiques, initiatives, acteurs et projets de la transition alimentaire en France.
+Votre assistant intelligent pour explorer et exploiter les ressources du portail [portail-alimentation-durable.fr](https://www.portail-alimentation-durable.fr/).</br> Accédez facilement aux politiques, initiatives, acteurs et projets de la transition alimentaire en France.
 `;
 
   // Contenu de l'accordéon (détails techniques)
@@ -24,12 +40,17 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
 
   // Texte d'invitation final
   const inviteText = `
-**Utilisez la barre de recherche ci dessous pour à interagir avec l'agent.**
+**Utilisez la barre de recherche ci dessous pour interagir avec l'agent.**
 `;
 
   const toggleAccordion = () => {
     setIsAccordionOpen(!isAccordionOpen);
   };
+
+  // Titre de l'accordéon - varie selon le mode
+  const accordionTitle = isMarketingMode
+    ? '✨ Créez votre propre agent IA pour votre organisation !'
+    : '✨ Comment ça marche ? J\'en veux un pour mon organisation !';
 
   return (
     <div className="intro-message">
@@ -72,7 +93,7 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
               className="accordion-toggle"
               onClick={toggleAccordion}
             >
-              <span>✨ Comment ça marche ? J'en veux un pour mon organisation !</span>
+              <span>{accordionTitle}</span>
               <span className={`accordion-icon ${isAccordionOpen ? 'open' : ''}`}>
                 {isAccordionOpen ? '−' : '+'}
               </span>

@@ -22,7 +22,7 @@
   padding: 1rem 1rem 1.2rem;
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
   border-radius: 20px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   position: relative;
   overflow: visible;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
@@ -48,7 +48,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   padding: 0 0.5rem;
   width: 100%;
   box-sizing: border-box;
@@ -158,7 +158,7 @@
 
 /* Disclaimer Section */
 .disclaimer-section {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   padding: 0 0.5rem;
   width: 100%;
   box-sizing: border-box;
@@ -175,17 +175,6 @@
   gap: 1rem;
   align-items: flex-start;
   position: relative;
-}
-
-.disclaimer-content::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 5px;
-  height: 100%;
-  background: linear-gradient(180deg, #eab308, #f59e0b);
-  border-radius: 16px 0 0 16px;
 }
 
 .disclaimer-icon {
@@ -226,7 +215,7 @@
 
 /* CTA Section */
 .cta-section {
-  margin: 1.2rem 0;
+  margin: 0.8rem 0;
   padding: 0 0.5rem;
   width: 100%;
   box-sizing: border-box;
@@ -356,7 +345,7 @@
     grid-template-columns: 1fr;
     gap: 0.8rem;
     padding: 0 0.25rem;
-    margin: 1.2rem 0;
+    margin: 0.8rem 0;
   }
 
   .feature-card {
@@ -365,7 +354,7 @@
 
   .hero-section {
     padding: 0.8rem 0.5rem 1rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
   }
 
   .intro-content h3 {
@@ -385,17 +374,17 @@
   }
 
   .cta-section {
-    margin: 1rem 0;
+    margin: 0.6rem 0;
     padding: 0 0.25rem;
   }
 
   .invite-section {
-    margin: 0.8rem 0 0.3rem;
+    margin: 0.6rem 0 0.3rem;
     padding: 0 0.25rem;
   }
 
   .disclaimer-section {
-    margin: 1.2rem 0;
+    margin: 0.8rem 0;
     padding: 0 0.25rem;
   }
 

@@ -45,7 +45,7 @@ Développé par **[Data Players](https://data-players.com/)**, l'agent a été c
 
   // Disclaimer text about the project
   const disclaimerText = `
-Le Portail de l'Alimentation Durable est un projet numérique collectif, dont le portage, assuré dans sa première phase par Crisalim et Maurésiaterre, a été confié, en 2025, à Solagro. Le projet a déjà permis de rassembler près d'une dizaine d'acteurs qui contribuent à la construction du projet* et centraliser les ressources de 6 structures (présentées ci-dessous).
+Le Portail de l'Alimentation Durable est un projet numérique collectif, dont le portage, assuré dans sa première phase par Crisalim et Maurésiaterre, a été confié, en 2025, à Solagro. Le projet a déjà permis de rassembler près d'une dizaine d'acteurs qui contribuent à la construction du projet et centraliser les ressources de 6 structures (cliquer sur le logo en haut à gauche pour accéder au portail).
 
 Dans le but de renforcer sa capacité à faciliter l'accès à une information fiable et pertinente en matière d'alimentation durable mais aussi le traitement et la restitution de l'information, le projet s'oriente vers le développement d'un agent IA en mesure de répondre à cet objectif. Un démonstrateur a été développé dans ce sens est vous est d'ores et déjà proposé à l'utilisation. La phase de déploiement du projet qui débute vise à permettre l'amélioration de cet outil.
 
@@ -76,23 +76,20 @@ Pour partager vos retours sur ce démonstrateur, vos attentes et/ou idées sur c
         <div className="features-grid">
           <div className="feature-card">
             <h4>Recherche intelligente</h4>
-            <p>Interrogez directement la base de connaissance du portail avec un langage naturel</p>
+            <p>Interrogez en langage naturel la base de connaissance</p>
           </div>
           <div className="feature-card">
-            <h4>Accès unifié aux sources</h4>
-            <p>Accédez à toutes les bases de connaissances des partenaires du portail simplement</p>
+            <h4>Accès unifié</h4>
+            <p>Explorez les ressources des partenaires du portail</p>
           </div>
           <div className="feature-card">
-            <h4>Exploration enrichie</h4>
-            <p>Explorez des concepts complexes en s'appuyant sur des ressources externes</p>
+            <h4>Enrichissement</h4>
+            <p>Bénéficiez d'enrichissements de contenu via Wikipedia</p>
           </div>
-
           <div className="feature-card">
-            <h4>Réponses contextualisées</h4>
-            <p>Obtenez des réponses synthétiques qualifiées et contextualisées</p>
+            <h4>Impact environnemental</h4>
+            <p>Visualisez l'empreinte carbone et eau de chaque requête</p>
           </div>
-
-
         </div>
 
         {/* Disclaimer Section */}

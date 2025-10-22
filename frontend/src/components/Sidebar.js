@@ -7,12 +7,13 @@ import { ReactComponent as WikiIcon } from '../assets/logos/common/SVG/documenta
 import './SideBar.css';
 
 const routes = [
-  { 
+  {
     path: '/chat',
     label: 'Chat',
     section: 'middle',
     icon: <ExploreIcon />,
-    id: 'chat-link' }
+    id: 'chat-link'
+  }
 ];
 
 const Sidebar = () => {
@@ -60,9 +61,9 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-icon">
-        <Link to="/chat">
+        <a href="https://www.portail-alimentation-durable.fr/" target="_blank" rel="noopener noreferrer">
           <PortalSvgIcon style={{ width: '50px', height: '50px' }} />
-        </Link>
+        </a>
       </div>
 
       <div className="sidebar-middle">
